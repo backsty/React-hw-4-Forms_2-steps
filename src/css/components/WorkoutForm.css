@@ -1,0 +1,71 @@
+.workout-form {
+  width: 100%;
+  background: #f9f9f9;
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.workout-form form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workout-form input {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.workout-form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.workout-form input[type='date'] {
+  width: 8.125rem;
+}
+
+.workout-form input[type='number'] {
+  width: 8.125rem;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.cancel-button {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.submit-button:hover,
+.cancel-button:hover {
+  filter: brightness(1.1);
+}
+
+.submit-button img,
+.cancel-button img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
